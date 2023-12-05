@@ -2,4 +2,4 @@
 
 Simple project in vanilla js to turn on/off
 
-![](https://i.imgur.com/iWoIRFD.png
+![](https://i.imgur.com/iWoIRFD.png)
