@@ -2,11 +2,9 @@ let checkBox = document.getElementById("toggle");
 
 function onoff() {
     if (checkBox.checked == true){
-        document.body.style.backgroundColor = 'rgb(222, 222, 222)';
-        document.getElementById('bulb').src='bulb.png';
+        document.getElementById('bulb').src='bulb_on.png';
       } 
     else {
-        document.body.style.backgroundColor = 'rgb(41, 41, 41)';
-        document.getElementById('bulb').src='bulb1.png';
+        document.getElementById('bulb').src='bulb_off.png';
       }
     }

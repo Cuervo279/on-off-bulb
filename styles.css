@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+label {
+    position: relative;
+    margin-top: 10%;
+    width: 150px;
+    height: 75px;
+    background: #212121;
+    border-radius: 15px;
+  }
+
+label input {
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 65px;
+    height: 65px;
+    background: #333;
+    border: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+label:has(input:checked) {
+    background: #ffe8c6;
+    filter: drop-shadow(0 0 5px #ffe8c6) drop-shadow(0 0 10px #ffe8c6) drop-shadow(0 0 15px #ffe8c6);
+    transition: 1s;
+  }
+
+label input:checked ~ span {
+    left: 80px;
+  }
+
+label span svg{
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 2em;
+    transition: 0.5s;
+ }
+
+ label input:checked ~ span svg{
+    stroke: #ffe8c6;
+    filter: drop-shadow(0 0 5px #ffe8c6) drop-shadow(0 0 10px #ffe8c6) drop-shadow(0 0 15px #ffe8c6);
+ }
+
+ .bulb {
+    position: absolute;
+    top: 0%;
+    width: 400px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  #bulb {
+    transition: opacity 1s ease;
+    opacity: 1;
+  }
+
